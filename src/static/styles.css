@@ -74,6 +74,83 @@ section h3 {
   margin-bottom: 8px;
 }
 
+.participants {
+  margin-top: 10px;
+  padding-top: 10px;
+  border-top: 1px dashed #d0d0d0;
+}
+
+.participants h5 {
+  font-size: 14px;
+  letter-spacing: 0.3px;
+  text-transform: uppercase;
+  color: #1a237e;
+  margin-bottom: 8px;
+}
+
+.participants-list {
+  list-style: none;
+  padding-left: 0;
+  margin: 0;
+  color: #424242;
+}
+
+.participant-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+  padding: 6px 8px;
+  margin-bottom: 6px;
+  font-size: 14px;
+  background-color: #ffffff;
+  border: 1px solid #ececec;
+  border-radius: 6px;
+}
+
+.participant-name {
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.participant-remove {
+  width: 28px;
+  height: 28px;
+  border-radius: 8px;
+  border: 1px solid #f4b4b4;
+  background-color: #ffe9e9;
+  color: #b42318;
+  line-height: 1;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  transition: background-color 0.2s, border-color 0.2s, transform 0.2s, box-shadow 0.2s;
+}
+
+.participant-remove:hover {
+  background-color: #ffd6d6;
+  border-color: #ef9a9a;
+  transform: scale(1.03);
+  box-shadow: 0 4px 10px rgba(180, 35, 24, 0.15);
+}
+
+.participant-remove:focus-visible {
+  outline: 2px solid #1a237e;
+  outline-offset: 2px;
+}
+
+.participant-remove-icon {
+  width: 16px;
+  height: 16px;
+  fill: currentColor;
+}
+
+.participants-empty {
+  font-style: italic;
+  color: #6b6b6b;
+}
+
 .form-group {
   margin-bottom: 15px;
 }
